@@ -1,0 +1,157 @@
+Private Sub Image1_Click()
+Form1.Visible = False
+Form2.Visible = True
+End Sub
+
+Private Sub Image2_Click()
+Form1.Visible = False
+Form2.Visible = True
+End Sub
+
+Private Sub Timer1_Timer()
+If Image1.Visible = True Then
+Image1.Visible = False
+Image2.Visible = True
+ElseIf Image2.Visible = True Then
+Image2.Visible = False
+Image1.Visible = True
+End If
+End Sub
+
+
+Private Sub Image1_Click()
+Form3.Visible = True
+Form2.Visible = False
+End Sub
+
+
+Private Sub Command1_Click()
+wmp1.URL = "C:\Users\asus\Documents\wav\button1.wav"
+If Text1.Text = "1234" Then
+Form4.Visible = True
+Form3.Visible = False
+Text1.Text = ""
+Else
+MsgBox "ENTER CORRECT PIN"
+Text1.Text = ""
+End If
+End Sub
+
+
+Private Sub Label1_Click()
+
+End Sub
+
+
+
+
+
+Private Sub Command1_Click()
+wmp1.URL = "C:\Users\asus\Documents\wav\button1.wav"
+Form4.Visible = False
+Form5.Visible = True
+End Sub
+
+Private Sub Command2_Click()
+
+wmp1.URL = "C:\Users\asus\Documents\wav\button1.wav"
+Form4.Visible = False
+Form6.Visible = True
+End Sub
+
+Private Sub Command3_Click()
+wmp1.URL = "C:\Users\asus\Documents\wav\button1.wav"
+Form4.Visible = False
+Form7.Visible = True
+End Sub
+
+Private Sub Command4_Click()
+wmp1.URL = "C:\Users\asus\Documents\wav\button1.wav"
+Form4.Visible = False
+Form8.Visible = True
+End Sub
+
+Private Sub Form_Load()
+Text1.Text = "10000"
+
+End Sub
+
+
+Private Sub Command1_Click()
+wmp1.URL = "C:\Users\asus\Documents\wav\button1.wav"
+If Text1.Text = "1234" Then
+Label2.Visible = True
+Text2.Visible = True
+Label1.Visible = False
+Text1.Visible = False
+Command1.Visible = False
+Command2.Visible = True
+Else
+MsgBox "ENTER CORRECT OTP"
+Text1.Text = ""
+End If
+
+
+End Sub
+
+Private Sub Command2_Click()
+wmp1.URL = "C:\Users\asus\Documents\wav\button1.wav"
+
+  If Val(Text2.Text) > Val(Form4.Text1.Text) Then
+  MsgBox "unsufficient balance"
+  Text2.Text = ""
+  Else
+  Label4.Visible = True
+  Label3.Visible = True
+  Form4.Text1.Text = Val(Form4.Text1.Text) - Val(Text2.Text)
+  Command4.Visible = True
+  Command5.Visible = True
+  Label2.Visible = False
+ Text2.Visible = False
+ Label1.Visible = False
+ Text1.Visible = False
+ Command1.Visible = False
+ Command2.Visible = False
+ Command3.Visible = False
+ End If
+End Sub
+
+Private Sub Command3_Click()
+wmp1.URL = "C:\Users\asus\Documents\wav\button1.wav"
+Form1.Visible = True
+Form6.Visible = False
+
+End Sub
+
+Private Sub Command4_Click()
+wmp1.URL = "C:\Users\asus\Documents\wav\button1.wav"
+Form1.Visible = True
+Form2.Visible = False
+Text1.Text = ""
+Text2.Text = ""
+Text1.Visible = True
+Label1.Visible = True
+Command1.Visible = True
+Command3.Visible = True
+Label3.Visible = False
+Label4.Visible = False
+Command4.Visible = False
+Command5.Visible = False
+
+End Sub
+
+Private Sub Command5_Click()
+Form1.Visible = True
+Form2.Visible = False
+Text1.Text = ""
+Text2.Text = ""
+Text1.Visible = True
+Label1.Visible = True
+Command1.Visible = True
+Command3.Visible = True
+Label3.Visible = False
+Label4.Visible = False
+Command4.Visible = False
+Command5.Visible = False
+
+End Sub
